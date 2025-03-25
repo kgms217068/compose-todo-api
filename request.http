@@ -15,7 +15,7 @@ Content-Type: application/json
 ###
 
 ### 할 일 수정 (PUT 요청)
-PUT http://localhost:3000/todos/67e21373d329b57541caf593
+PUT http://localhost:3000/todos/67e2138cd329b57541caf599
 Content-Type: application/json
 
 {
@@ -25,4 +25,4 @@ Content-Type: application/json
 ###
 
 ### 할 일 삭제 (DELETE 요청)
-DELETE http://localhost:3000/todos/67e21373d329b57541caf593
+DELETE http://localhost:3000/todos/67e2138cd329b57541caf599
