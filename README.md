@@ -39,5 +39,5 @@ PUT /todos/:id : 특정 할 일 수정
 DELETE /todos/:id : 특정 할 일 삭제
 
 3. 실행사진
-[예시사진1(PUT)](./image/예시사진1(PUT).png)
-[예시사진2(DELETE)](./image/예시사진2(DELETE).png)
+![예시사진1(PUT)](./image/예시사진1(PUT).png)
+![예시사진2(DELETE)](./image/예시사진2(DELETE).png)
