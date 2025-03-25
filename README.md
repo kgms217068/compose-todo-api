@@ -19,8 +19,8 @@ Docker Compose를 활용하여 백엔드 서버와 데이터베이스를 컨테�
 ### 1. 도커 실행
 ```bash
 docker-compose up --build
-
-2. API테스트
+```
+### 2. API테스트
 VS Code에 REST Client 확장을 설치하고, requests.http 파일을 열어 요청을 보냅니다.
 
 예시 [POST]
@@ -38,6 +38,7 @@ POST /todos : 새 할 일 추가
 PUT /todos/:id : 특정 할 일 수정
 DELETE /todos/:id : 특정 할 일 삭제
 
-3. 실행사진
+### 3. 실행사진
 ![예시사진1(PUT)](./image/예시사진1(PUT).png)
+
 ![예시사진2(DELETE)](./image/예시사진2(DELETE).png)
