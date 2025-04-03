@@ -5,6 +5,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
+app.use(express.static('public'));
 
 // 몽고 연결
 mongoose.connect('mongodb://mongo:27017/todos')
