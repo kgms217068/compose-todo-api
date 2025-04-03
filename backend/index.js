@@ -1,7 +1,8 @@
+require('dotenv').config(); 
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
@@ -19,6 +20,7 @@ app.get('/todos', async (req, res) => {
   res.json(todos);
 });
 
+
 // POST /todos
 app.post('/todos', async (req, res) => {
   const todo = new Todo({ text: req.body.text });
@@ -27,8 +29,8 @@ app.post('/todos', async (req, res) => {
 });
 
 // 서버 시작
-app.listen(port, () => {
-  console.log(`🚀 서버 실행 중: http://localhost:${port}`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`서버 실행 중: http://0.0.0.0:${port}`);
 });
 
 // 수정 기능
